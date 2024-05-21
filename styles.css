@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #000000;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    background: #1E1E1E;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #EAEAEA;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.ruleta {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    transition: transform 0.5s ease;
+}
+
+.ruleta.girar {
+    transform: rotate(360deg);
+}
+
+.verbo {
+    font-size: 1.5em;
+    color: #4CAF50;
+    padding: 20px;
+    transition: font-size 0.3s ease;
+}
+
+.verbo.mostrar-todo {
+    font-size: 1.2em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+.countdown {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: #FF0000;
+    font-weight: 700;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { color: #FF0000; }
+    50% { color: #FF4500; }
+    100% { color: #FF0000; }
+}
+
+.creditos {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
